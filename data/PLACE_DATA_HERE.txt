@@ -1,0 +1,1 @@
+Place master_cutting_paths_CLEAN.csv here (see README and CHECKSUMS.txt)

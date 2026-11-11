@@ -1,0 +1,7 @@
+proto,dir,transfer,k_star_median,P_never_within_200,k_star_q05,k_star_q95
+naive,vm20i->vmx30ui,T-offset (GBM),20.0,0.0,10.0,20.0
+naive,vmx30ui->vm20i,T-offset (GBM),20.0,0.0,10.0,20.0
+exp,vm20i->vmx30ui,T-offset (GBM),30.0,0.0005,20.0,30.0
+exp,vmx30ui->vm20i,T-offset (GBM),20.0,0.0015,20.0,30.0
+exp_purged,vm20i->vmx30ui,T-offset (GBM),20.0,0.0,20.0,30.0
+exp_purged,vmx30ui->vm20i,T-offset (GBM),20.0,0.0005,10.0,50.0

@@ -1,0 +1,6 @@
+budgets_cuts: [3, 5, 10, 20, 30, 50, 75, 100, 150, 200]   # budget-curve and crossover analysis (up to 200); coverage and design comparisons use 60, 150, 250 (see scripts)
+test_fraction_experiments: 0.30    # 11 (VM20i) / 6 (VMX30Ui); redrawn in every repeat
+protocols: [random_5fold, sibling_purged, held_out_experiment, held_out_tool, held_out_material, held_out_machine]
+main_protocol: experiment_disjoint
+bootstrap: {type: cluster (experiment level), resamples: 2000, units: "37 VM20i / 19 VMX30Ui experiments", paired: true}
+selection_rule: {distance: "min Euclidean on 6 standardised variables", threshold: "leave-one-experiment-out within calibration data", fallback_below_3_experiments: transfer}

@@ -1,0 +1,9 @@
+# numpy default_rng(seed) per repeat index `rep`; see SEEDS.md for details
+budget_curves:        {script: src/bench2.py,        seed: "7919*rep+13",      repeats: {exp: 80, exp_purged: 80, exp_healthy: 60, expcal: 60, naive: 40}}
+coverage:             {script: src/coverage.py,      seed: "104729*rep+5",     repeats: 80}
+commissioning_designs: {script: src/e5.py,           seed: "15485863*(rep+1)+3", repeats: 100}
+selection_rule:       {script: experiments/ideaA.py, seed: "32452843*(rep+1)+11", repeats: 80}
+matched_coverage:     {script: src/matched.py,       seed: "7001*rep+17",      repeats: 60}
+leave_one_experiment_out: {script: experiments/loo.py, seed: "900001*(excluded_index+2)+137*rep+3", repeats: 16}
+coefficient_diagnostic: {script: experiments/coef.py, seed: "4242*rep+9",      repeats: 80}
+cluster_bootstrap:    {script: src/analyze2.py,      resamples: 2000, note: "module-level seeds 0, 5, 11"}

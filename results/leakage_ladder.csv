@@ -1,0 +1,17 @@
+scope,split,R2,MAE_W
+pooled (2 machines),random,0.577,340
+pooled (2 machines),"random, sibling-purged",0.502,377
+pooled (2 machines),held-out experiment,0.261,565
+pooled (2 machines),held-out tool,0.088,700
+pooled (2 machines),held-out material,-0.219,735
+pooled (2 machines),held-out machine,-1.113,1245
+vm20i,random,0.726,155
+vm20i,"random, sibling-purged",0.688,167
+vm20i,held-out experiment,0.604,222
+vm20i,held-out tool,0.635,245
+vm20i,held-out material,0.392,335
+vmx30ui,random,0.784,178
+vmx30ui,"random, sibling-purged",0.776,181
+vmx30ui,held-out experiment,0.676,237
+vmx30ui,held-out tool,0.524,327
+vmx30ui,held-out material,0.248,418

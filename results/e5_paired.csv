@@ -1,0 +1,129 @@
+scenario,dir,k,comparison,dMAE,95% CI,P(first better)
+full,vm20i->vmx30ui,60,planned vs random (O-physics),27,"[8,50]",0.0
+full,vm20i->vmx30ui,60,planned vs complete-exp (O-physics),-466,"[-778,-231]",1.0
+full,vm20i->vmx30ui,60,planned vs planned-no-material (O-physics),4,"[-0,9]",0.05
+full,vm20i->vmx30ui,60,random vs complete-exp (O-physics),-494,"[-801,-260]",1.0
+full,vm20i->vmx30ui,60,LOCAL planned vs TRANSFER 10-cut offset,-49,"[-91,-6]",0.99
+full,vm20i->vmx30ui,60,LOCAL random vs TRANSFER 10-cut offset,-76,"[-125,-30]",1.0
+full,vm20i->vmx30ui,60,LOCAL complete-exp vs TRANSFER 10-cut offset,418,"[171,725]",0.0
+full,vm20i->vmx30ui,60,LOCAL planned vs TRANSFER same-cut offset,-37,"[-81,8]",0.95
+full,vm20i->vmx30ui,150,planned vs random (O-physics),7,"[2,14]",0.0
+full,vm20i->vmx30ui,150,planned vs complete-exp (O-physics),-317,"[-546,-151]",1.0
+full,vm20i->vmx30ui,150,planned vs planned-no-material (O-physics),-1,"[-2,1]",0.78
+full,vm20i->vmx30ui,150,random vs complete-exp (O-physics),-324,"[-553,-159]",1.0
+full,vm20i->vmx30ui,150,LOCAL planned vs TRANSFER 10-cut offset,-83,"[-131,-39]",1.0
+full,vm20i->vmx30ui,150,LOCAL random vs TRANSFER 10-cut offset,-90,"[-140,-47]",1.0
+full,vm20i->vmx30ui,150,LOCAL complete-exp vs TRANSFER 10-cut offset,234,"[62,459]",0.0
+full,vm20i->vmx30ui,150,LOCAL planned vs TRANSFER same-cut offset,-71,"[-124,-23]",1.0
+full,vm20i->vmx30ui,250,planned vs random (O-physics),4,"[-1,10]",0.04
+full,vm20i->vmx30ui,250,planned vs complete-exp (O-physics),-104,"[-164,-56]",1.0
+full,vm20i->vmx30ui,250,planned vs planned-no-material (O-physics),0,"[-2,2]",0.32
+full,vm20i->vmx30ui,250,random vs complete-exp (O-physics),-109,"[-169,-62]",1.0
+full,vm20i->vmx30ui,250,LOCAL planned vs TRANSFER 10-cut offset,-88,"[-136,-45]",1.0
+full,vm20i->vmx30ui,250,LOCAL random vs TRANSFER 10-cut offset,-93,"[-143,-48]",1.0
+full,vm20i->vmx30ui,250,LOCAL complete-exp vs TRANSFER 10-cut offset,16,"[-39,77]",0.3
+full,vm20i->vmx30ui,250,LOCAL planned vs TRANSFER same-cut offset,-77,"[-128,-30]",1.0
+full,vmx30ui->vm20i,60,planned vs random (O-physics),34,"[22,46]",0.0
+full,vmx30ui->vm20i,60,planned vs complete-exp (O-physics),-297,"[-388,-206]",1.0
+full,vmx30ui->vm20i,60,planned vs planned-no-material (O-physics),6,"[-3,18]",0.09
+full,vmx30ui->vm20i,60,random vs complete-exp (O-physics),-331,"[-419,-246]",1.0
+full,vmx30ui->vm20i,60,LOCAL planned vs TRANSFER 10-cut offset,-63,"[-147,12]",0.95
+full,vmx30ui->vm20i,60,LOCAL random vs TRANSFER 10-cut offset,-97,"[-182,-21]",1.0
+full,vmx30ui->vm20i,60,LOCAL complete-exp vs TRANSFER 10-cut offset,234,"[165,320]",0.0
+full,vmx30ui->vm20i,60,LOCAL planned vs TRANSFER same-cut offset,-53,"[-141,24]",0.91
+full,vmx30ui->vm20i,150,planned vs random (O-physics),30,"[14,46]",0.0
+full,vmx30ui->vm20i,150,planned vs complete-exp (O-physics),-86,"[-138,-36]",1.0
+full,vmx30ui->vm20i,150,planned vs planned-no-material (O-physics),-1,"[-5,5]",0.6
+full,vmx30ui->vm20i,150,random vs complete-exp (O-physics),-115,"[-159,-76]",1.0
+full,vmx30ui->vm20i,150,LOCAL planned vs TRANSFER 10-cut offset,-87,"[-174,-9]",0.99
+full,vmx30ui->vm20i,150,LOCAL random vs TRANSFER 10-cut offset,-116,"[-197,-45]",1.0
+full,vmx30ui->vm20i,150,LOCAL complete-exp vs TRANSFER 10-cut offset,-1,"[-76,76]",0.51
+full,vmx30ui->vm20i,150,LOCAL planned vs TRANSFER same-cut offset,-76,"[-169,6]",0.97
+full,vmx30ui->vm20i,250,planned vs random (O-physics),26,"[7,47]",0.0
+full,vmx30ui->vm20i,250,planned vs complete-exp (O-physics),-85,"[-136,-38]",1.0
+full,vmx30ui->vm20i,250,planned vs planned-no-material (O-physics),2,"[-1,5]",0.1
+full,vmx30ui->vm20i,250,random vs complete-exp (O-physics),-111,"[-155,-74]",1.0
+full,vmx30ui->vm20i,250,LOCAL planned vs TRANSFER 10-cut offset,-93,"[-182,-16]",0.99
+full,vmx30ui->vm20i,250,LOCAL random vs TRANSFER 10-cut offset,-120,"[-199,-49]",1.0
+full,vmx30ui->vm20i,250,LOCAL complete-exp vs TRANSFER 10-cut offset,-8,"[-99,78]",0.57
+full,vmx30ui->vm20i,250,LOCAL planned vs TRANSFER same-cut offset,-84,"[-179,-3]",0.98
+narrow6,vm20i->vmx30ui,60,planned vs random (O-physics),68,"[13,160]",0.0
+narrow6,vm20i->vmx30ui,60,planned vs complete-exp (O-physics),-506,"[-792,-273]",1.0
+narrow6,vm20i->vmx30ui,60,planned vs planned-no-material (O-physics),-8,"[-41,12]",0.7
+narrow6,vm20i->vmx30ui,60,random vs complete-exp (O-physics),-574,"[-939,-289]",1.0
+narrow6,vm20i->vmx30ui,60,LOCAL planned vs TRANSFER 10-cut offset,40,"[-65,183]",0.3
+narrow6,vm20i->vmx30ui,60,LOCAL random vs TRANSFER 10-cut offset,-28,"[-89,35]",0.82
+narrow6,vm20i->vmx30ui,60,LOCAL complete-exp vs TRANSFER 10-cut offset,546,"[226,968]",0.0
+narrow6,vm20i->vmx30ui,60,LOCAL planned vs TRANSFER same-cut offset,50,"[-60,193]",0.23
+narrow6,vm20i->vmx30ui,150,planned vs random (O-physics),-28,"[-120,37]",0.69
+narrow6,vm20i->vmx30ui,150,planned vs complete-exp (O-physics),-237,"[-414,-110]",1.0
+narrow6,vm20i->vmx30ui,150,planned vs planned-no-material (O-physics),-25,"[-135,50]",0.63
+narrow6,vm20i->vmx30ui,150,random vs complete-exp (O-physics),-209,"[-309,-122]",1.0
+narrow6,vm20i->vmx30ui,150,LOCAL planned vs TRANSFER 10-cut offset,9,"[-79,117]",0.46
+narrow6,vm20i->vmx30ui,150,LOCAL random vs TRANSFER 10-cut offset,37,"[-94,232]",0.37
+narrow6,vm20i->vmx30ui,150,LOCAL complete-exp vs TRANSFER 10-cut offset,245,"[62,518]",0.0
+narrow6,vm20i->vmx30ui,150,LOCAL planned vs TRANSFER same-cut offset,21,"[-69,129]",0.36
+narrow6,vm20i->vmx30ui,250,planned vs random (O-physics),111,"[14,294]",0.0
+narrow6,vm20i->vmx30ui,250,planned vs complete-exp (O-physics),32,"[-57,169]",0.37
+narrow6,vm20i->vmx30ui,250,planned vs planned-no-material (O-physics),22,"[-33,88]",0.24
+narrow6,vm20i->vmx30ui,250,random vs complete-exp (O-physics),-79,"[-135,-35]",1.0
+narrow6,vm20i->vmx30ui,250,LOCAL planned vs TRANSFER 10-cut offset,36,"[-92,222]",0.37
+narrow6,vm20i->vmx30ui,250,LOCAL random vs TRANSFER 10-cut offset,-75,"[-122,-26]",1.0
+narrow6,vm20i->vmx30ui,250,LOCAL complete-exp vs TRANSFER 10-cut offset,4,"[-63,71]",0.45
+narrow6,vm20i->vmx30ui,250,LOCAL planned vs TRANSFER same-cut offset,47,"[-84,235]",0.33
+narrow6,vmx30ui->vm20i,60,planned vs random (O-physics),15,"[-2,32]",0.04
+narrow6,vmx30ui->vm20i,60,planned vs complete-exp (O-physics),-300,"[-425,-182]",1.0
+narrow6,vmx30ui->vm20i,60,planned vs planned-no-material (O-physics),-6,"[-21,7]",0.8
+narrow6,vmx30ui->vm20i,60,random vs complete-exp (O-physics),-315,"[-441,-198]",1.0
+narrow6,vmx30ui->vm20i,60,LOCAL planned vs TRANSFER 10-cut offset,-26,"[-105,56]",0.74
+narrow6,vmx30ui->vm20i,60,LOCAL random vs TRANSFER 10-cut offset,-41,"[-119,38]",0.84
+narrow6,vmx30ui->vm20i,60,LOCAL complete-exp vs TRANSFER 10-cut offset,274,"[165,404]",0.0
+narrow6,vmx30ui->vm20i,60,LOCAL planned vs TRANSFER same-cut offset,3,"[-85,91]",0.48
+narrow6,vmx30ui->vm20i,150,planned vs random (O-physics),23,"[4,47]",0.01
+narrow6,vmx30ui->vm20i,150,planned vs complete-exp (O-physics),-62,"[-108,-18]",1.0
+narrow6,vmx30ui->vm20i,150,planned vs planned-no-material (O-physics),-24,"[-41,-10]",1.0
+narrow6,vmx30ui->vm20i,150,random vs complete-exp (O-physics),-85,"[-129,-44]",1.0
+narrow6,vmx30ui->vm20i,150,LOCAL planned vs TRANSFER 10-cut offset,-58,"[-137,20]",0.92
+narrow6,vmx30ui->vm20i,150,LOCAL random vs TRANSFER 10-cut offset,-81,"[-150,-19]",1.0
+narrow6,vmx30ui->vm20i,150,LOCAL complete-exp vs TRANSFER 10-cut offset,4,"[-68,78]",0.46
+narrow6,vmx30ui->vm20i,150,LOCAL planned vs TRANSFER same-cut offset,-26,"[-113,58]",0.73
+narrow6,vmx30ui->vm20i,250,planned vs random (O-physics),21,"[6,39]",0.0
+narrow6,vmx30ui->vm20i,250,planned vs complete-exp (O-physics),-25,"[-84,9]",0.84
+narrow6,vmx30ui->vm20i,250,planned vs planned-no-material (O-physics),7,"[-2,19]",0.07
+narrow6,vmx30ui->vm20i,250,random vs complete-exp (O-physics),-46,"[-106,-9]",1.0
+narrow6,vmx30ui->vm20i,250,LOCAL planned vs TRANSFER 10-cut offset,-85,"[-155,-19]",1.0
+narrow6,vmx30ui->vm20i,250,LOCAL random vs TRANSFER 10-cut offset,-106,"[-175,-43]",1.0
+narrow6,vmx30ui->vm20i,250,LOCAL complete-exp vs TRANSFER 10-cut offset,-60,"[-145,44]",0.9
+narrow6,vmx30ui->vm20i,250,LOCAL planned vs TRANSFER same-cut offset,-46,"[-122,22]",0.9
+narrow3,vm20i->vmx30ui,60,planned vs random (O-physics),-37,"[-136,42]",0.77
+narrow3,vm20i->vmx30ui,60,planned vs complete-exp (O-physics),-356,"[-699,-132]",1.0
+narrow3,vm20i->vmx30ui,60,planned vs planned-no-material (O-physics),-121,"[-296,16]",0.95
+narrow3,vm20i->vmx30ui,60,random vs complete-exp (O-physics),-318,"[-580,-118]",1.0
+narrow3,vm20i->vmx30ui,60,LOCAL planned vs TRANSFER 10-cut offset,212,"[73,400]",0.0
+narrow3,vm20i->vmx30ui,60,LOCAL random vs TRANSFER 10-cut offset,249,"[60,516]",0.0
+narrow3,vm20i->vmx30ui,60,LOCAL complete-exp vs TRANSFER 10-cut offset,567,"[217,1090]",0.0
+narrow3,vm20i->vmx30ui,60,LOCAL planned vs TRANSFER same-cut offset,217,"[78,407]",0.0
+narrow3,vm20i->vmx30ui,150,planned vs random (O-physics),-134,"[-557,157]",0.7
+narrow3,vm20i->vmx30ui,150,planned vs complete-exp (O-physics),-109,"[-480,171]",0.71
+narrow3,vm20i->vmx30ui,150,planned vs planned-no-material (O-physics),-234,"[-552,-23]",0.99
+narrow3,vm20i->vmx30ui,150,random vs complete-exp (O-physics),25,"[-57,104]",0.27
+narrow3,vm20i->vmx30ui,150,LOCAL planned vs TRANSFER 10-cut offset,161,"[35,298]",0.0
+narrow3,vm20i->vmx30ui,150,LOCAL random vs TRANSFER 10-cut offset,295,"[-6,817]",0.03
+narrow3,vm20i->vmx30ui,150,LOCAL complete-exp vs TRANSFER 10-cut offset,270,"[-22,733]",0.05
+narrow3,vm20i->vmx30ui,150,LOCAL planned vs TRANSFER same-cut offset,165,"[36,299]",0.01
+narrow3,vmx30ui->vm20i,60,planned vs random (O-physics),-57,"[-96,-25]",1.0
+narrow3,vmx30ui->vm20i,60,planned vs complete-exp (O-physics),-183,"[-270,-97]",1.0
+narrow3,vmx30ui->vm20i,60,planned vs planned-no-material (O-physics),-53,"[-91,-23]",1.0
+narrow3,vmx30ui->vm20i,60,random vs complete-exp (O-physics),-126,"[-222,-28]",0.99
+narrow3,vmx30ui->vm20i,60,LOCAL planned vs TRANSFER 10-cut offset,31,"[-32,101]",0.18
+narrow3,vmx30ui->vm20i,60,LOCAL random vs TRANSFER 10-cut offset,89,"[4,184]",0.02
+narrow3,vmx30ui->vm20i,60,LOCAL complete-exp vs TRANSFER 10-cut offset,215,"[117,319]",0.0
+narrow3,vmx30ui->vm20i,60,LOCAL planned vs TRANSFER same-cut offset,49,"[-18,120]",0.08
+narrow3,vmx30ui->vm20i,150,planned vs random (O-physics),4,"[-51,59]",0.44
+narrow3,vmx30ui->vm20i,150,planned vs complete-exp (O-physics),-26,"[-124,53]",0.7
+narrow3,vmx30ui->vm20i,150,planned vs planned-no-material (O-physics),-47,"[-209,58]",0.72
+narrow3,vmx30ui->vm20i,150,random vs complete-exp (O-physics),-30,"[-106,44]",0.8
+narrow3,vmx30ui->vm20i,150,LOCAL planned vs TRANSFER 10-cut offset,13,"[-58,94]",0.37
+narrow3,vmx30ui->vm20i,150,LOCAL random vs TRANSFER 10-cut offset,9,"[-80,107]",0.44
+narrow3,vmx30ui->vm20i,150,LOCAL complete-exp vs TRANSFER 10-cut offset,39,"[-69,181]",0.28
+narrow3,vmx30ui->vm20i,150,LOCAL planned vs TRANSFER same-cut offset,25,"[-55,110]",0.28

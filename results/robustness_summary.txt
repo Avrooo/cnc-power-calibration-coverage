@@ -1,0 +1,85 @@
+=== matched_analysis.py ===
+sets 3840 | matched pairs 37 (per direction: {'vm20i->vmx30ui': 1, 'vmx30ui->vm20i': 36} )
+
+Balance (standardised mean difference, 4-experiment minus 8–12-experiment sets):
+               descriptor  SMD before  SMD after matching
+     tool-material combos       -3.19               -1.59
+speed bins covered (of 6)       -0.70                0.00
+             SD log speed       -0.32               -0.09
+  MRR bins covered (of 6)       -0.94                0.00
+               SD log MRR       -0.39                0.02
+    SD log chip thickness       -0.42                0.04
+experiments per set: 4-exp group mean 4.0 | matched comparison group mean 8.2
+
+Local-minus-transfer MAE at 150 cuts (W), pooled over directions, cluster bootstrap over target experiments (all three materials present in every set):
+                                  contrast  estimate  CI low  CI high
+                MATCHED  4-experiment sets    -112.0  -176.0    -46.0
+             MATCHED  8–12-experiment sets    -140.0  -199.0    -83.0
+MATCHED  difference (4-exp minus 8–12-exp)      28.0    11.0     53.0
+               UNMATCHED 4-experiment sets     -25.0   -79.0     33.0
+            UNMATCHED 8–12-experiment sets     -69.0  -117.0    -24.0
+                      UNMATCHED difference      44.0    22.0     80.0
+P(difference>0) matched: 1.000 | per-direction matched difference:
+   vm20i->vmx30ui 25 W (n pairs 1)
+   vmx30ui->vm20i 31 W (n pairs 36)
+
+Within-split regression, local MAE ~ number of experiments + 6 coverage descriptors: change per extra experiment = 0.0 W (split-bootstrap 95% CI -3.7 to 3.9)
+
+=== matched_stratum.py ===
+Exactly 4 tool–material combinations in both groups: splits with both groups 26 (by direction [0, 26]); sets A 266 / B 38; mean experiments A 4.0 vs B 7.7
+  4-experiment sets (local−transfer): -32 W  [-112, +33]
+  more-experiment sets (local−transfer): -53 W  [-127, +16]
+  difference (4-exp minus more-exp): +21 W  [-4, +45]
+4–5 combinations in both groups: splits with both groups 70 (by direction [13, 57]); sets A 766 / B 193; mean experiments A 4.0 vs B 8.1
+  4-experiment sets (local−transfer): -41 W  [-91, +6]
+  more-experiment sets (local−transfer): -66 W  [-115, -22]
+  difference (4-exp minus more-exp): +25 W  [+12, +40]
+Same speed- and MRR-bin coverage (>=5 of 6 each) AND <=5 combos in comparison group: splits with both groups 69 (by direction [13, 56]); sets A 774 / B 177; mean experiments A 4.0 vs B 8.1
+  4-experiment sets (local−transfer): -55 W  [-102, -10]
+  more-experiment sets (local−transfer): -67 W  [-116, -22]
+  difference (4-exp minus more-exp): +12 W  [+0, +25]
+
+=== loo_analysis.py ===
+
+== vm20i->vmx30ui: full-data reference (no exclusion): random -78 W | 4-experiment +71 W | gap +149 W  (local minus transfer MAE)
+   19 leave-one-experiment-out reruns:
+   random design:        range -106 to -45 W | local better in 100% of reruns
+   4-experiment design:  range -62 to +443 W | transfer better in 79% of reruns
+   gap (4-exp minus random): range +15 to +541 W | positive in 100% of reruns
+   most influential exclusions (change in gap): [('vmx30ui_dataset14', '+541'), ('vmx30ui_dataset3', '+475'), ('vmx30ui_dataset17', '+451')]
+
+== vmx30ui->vm20i: full-data reference (no exclusion): random -118 W | 4-experiment +68 W | gap +186 W  (local minus transfer MAE)
+   37 leave-one-experiment-out reruns:
+   random design:        range -142 to -63 W | local better in 100% of reruns
+   4-experiment design:  range -82 to +214 W | transfer better in 73% of reruns
+   gap (4-exp minus random): range +23 to +309 W | positive in 100% of reruns
+   most influential exclusions (change in gap): [('vm20i_dataset28', '+23'), ('vm20i_dataset18', '+39'), ('vm20i_dataset15', '+60')]
+
+=== coef_analysis.py ===
+draws per design: {'combos4': 160, 'exps4': 160, 'exps8': 160, 'random': 160} | share with all 3 materials: {'combos4': 0.56, 'exps4': 0.52, 'exps8': 0.9, 'random': 1.0}
+
+All-material draws: coefficient error vs reference fit, bound hits, errors
+           n   nexp  MAE_local  MAE_transfer  dlogK    dm  dbase  hitK  hit_m  hit_b0
+design                                                                               
+random   160  17.49     211.45        299.91   0.11  0.04  28.96  0.03   0.15    0.21
+exps8    144   7.76     237.64        305.65   0.21  0.11  60.04  0.14   0.23    0.13
+combos4   90   6.70     322.99        314.92   0.30  0.14  78.70  0.12   0.38    0.08
+exps4     84   3.99     264.79        310.94   0.29  0.17  75.92  0.07   0.40    0.08
+
+Between-draw SD of fitted parameters:
+         sd_m  sd_logK_AA 6061  sd_logK_AISI 1018  sd_logK_AISI 4140
+design                                                              
+random   0.16             0.65               0.24               0.22
+exps8    0.18             0.71               0.35               0.37
+combos4  0.19             0.77               0.38               0.43
+exps4    0.22             0.61               0.28               0.40
+
+Within-split Spearman (draw-level) between local MAE and parameter error:
+  dK     rho=+0.47 (p=5.2e-28)
+  dm     rho=+0.17 (p=1.3e-04)
+  dbase  rho=+0.34 (p=9.0e-15)
+
+Log-MAE design effect relative to random cuts (within split):
+  exps8    without parameter error: +9%   with parameter error as covariates: -1%
+  combos4  without parameter error: +29%   with parameter error as covariates: +11%
+  exps4    without parameter error: +24%   with parameter error as covariates: +9%

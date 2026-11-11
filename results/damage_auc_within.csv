@@ -1,0 +1,43 @@
+machine,task,signal,AUC
+imi_vm20i,any abnormal/defective (label>0) vs normal,watt_mean,0.434
+imi_vm20i,any abnormal/defective (label>0) vs normal,S_Axis_Load_mean,0.544
+imi_vm20i,any abnormal/defective (label>0) vs normal,smarms_mean,0.875
+imi_vm20i,any abnormal/defective (label>0) vs normal,xmarms_mean,0.894
+imi_vm20i,any abnormal/defective (label>0) vs normal,ymarms_mean,0.805
+imi_vm20i,any abnormal/defective (label>0) vs normal,zmarms_mean,0.609
+imi_vm20i,any abnormal/defective (label>0) vs normal,PARAMS-ONLY classifier,0.756
+imi_vm20i,label 2 defective-tool only vs normal,watt_mean,0.292
+imi_vm20i,label 2 defective-tool only vs normal,S_Axis_Load_mean,0.348
+imi_vm20i,label 2 defective-tool only vs normal,smarms_mean,0.729
+imi_vm20i,label 2 defective-tool only vs normal,xmarms_mean,0.856
+imi_vm20i,label 2 defective-tool only vs normal,ymarms_mean,0.729
+imi_vm20i,label 2 defective-tool only vs normal,zmarms_mean,0.686
+imi_vm20i,label 2 defective-tool only vs normal,PARAMS-ONLY classifier,0.329
+imi_vm20i,damaged tool (*) vs intact,watt_mean,0.334
+imi_vm20i,damaged tool (*) vs intact,S_Axis_Load_mean,0.369
+imi_vm20i,damaged tool (*) vs intact,smarms_mean,0.697
+imi_vm20i,damaged tool (*) vs intact,xmarms_mean,0.81
+imi_vm20i,damaged tool (*) vs intact,ymarms_mean,0.677
+imi_vm20i,damaged tool (*) vs intact,zmarms_mean,0.708
+imi_vm20i,damaged tool (*) vs intact,PARAMS-ONLY classifier,0.204
+imi_vmx30ui,any abnormal/defective (label>0) vs normal,watt_mean,0.435
+imi_vmx30ui,any abnormal/defective (label>0) vs normal,S_Axis_Load_mean,0.444
+imi_vmx30ui,any abnormal/defective (label>0) vs normal,smarms_mean,0.752
+imi_vmx30ui,any abnormal/defective (label>0) vs normal,xmarms_mean,0.57
+imi_vmx30ui,any abnormal/defective (label>0) vs normal,ymarms_mean,0.722
+imi_vmx30ui,any abnormal/defective (label>0) vs normal,zmarms_mean,0.581
+imi_vmx30ui,any abnormal/defective (label>0) vs normal,PARAMS-ONLY classifier,0.561
+imi_vmx30ui,label 2 defective-tool only vs normal,watt_mean,0.412
+imi_vmx30ui,label 2 defective-tool only vs normal,S_Axis_Load_mean,0.454
+imi_vmx30ui,label 2 defective-tool only vs normal,smarms_mean,0.63
+imi_vmx30ui,label 2 defective-tool only vs normal,xmarms_mean,0.568
+imi_vmx30ui,label 2 defective-tool only vs normal,ymarms_mean,0.591
+imi_vmx30ui,label 2 defective-tool only vs normal,zmarms_mean,0.392
+imi_vmx30ui,label 2 defective-tool only vs normal,PARAMS-ONLY classifier,0.217
+imi_vmx30ui,damaged tool (*) vs intact,watt_mean,0.469
+imi_vmx30ui,damaged tool (*) vs intact,S_Axis_Load_mean,0.48
+imi_vmx30ui,damaged tool (*) vs intact,smarms_mean,0.643
+imi_vmx30ui,damaged tool (*) vs intact,xmarms_mean,0.599
+imi_vmx30ui,damaged tool (*) vs intact,ymarms_mean,0.59
+imi_vmx30ui,damaged tool (*) vs intact,zmarms_mean,0.435
+imi_vmx30ui,damaged tool (*) vs intact,PARAMS-ONLY classifier,0.245
